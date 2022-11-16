@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 40vh 60vh;
+    align-items: center;
+}
+
+.result-section {
+    grid-row: 1/2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6943FF;
+    color: #fff;
+}
+
+.result-section .title {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-transform: capitalize;
+}
+
+
+.result-section .number {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 24px;
+    border: 2px solid #B295FF;
+    padding: 0;
+    width: 117px;
+    height: 83px;
+    border-radius: 5px;
+    background-color: transparent;  
+    color: #FFFFFF;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.result-section .number:focus {
+    outline: none;
+
+}
+
+
+.result-section .convert {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #3D3D3D;
+    border: none;
+    padding: 8px 35px;
+    
+}
+
+.converter-section {
+    grid-row: 2/3;
+    height: 100%;
+    background-color: #405f8b;
+    background: #273549;
+    display: grid;
+    grid-template-rows: repeat(1fr 1fr 1fr);
+    color: #fff;
+    gap: 20px;
+    padding: 40px 30px;
+}
+
+.converter-section > div {
+    background-color: #405f8b;
+}
+
+.converter-section > div h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: #CCC1FF;
+}
+
+.converter-section > div p {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.converter-section .length {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 4.68077px;
+    gap: 10px;
+}
+
+.converter-section .volume {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4.68077px;
+    gap: 10px;
+}
+
+.converter-section .mass {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4.68077px;
+    gap: 10px;
+}
